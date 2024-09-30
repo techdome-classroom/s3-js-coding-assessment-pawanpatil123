@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    
+    let stach
 };
 
 module.exports = { isValid };
