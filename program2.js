@@ -2,14 +2,6 @@
  * @param {string} s
  * @return {number}
  */
-var romanToInt = function(s) {
-    
-};
-
-
-module.exports={romanToInt}
-
-
 var romanToInt= function(s) {
     if (s.length === 0) return 0; // Handle empty string
 
