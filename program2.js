@@ -3,7 +3,7 @@
  * @return {number}
  */
 var romanToInt= function(s) {
-    if (s.length === 0) return 0; // Handle empty string
+    if (s.length === 0) return 0;
 
     const romanMap = {
         'I': 1,
