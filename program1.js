@@ -4,7 +4,8 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let stach
+    let stack =[];
+    let
 };
 
 module.exports = { isValid };
