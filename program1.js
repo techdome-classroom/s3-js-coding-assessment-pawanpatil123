@@ -24,12 +24,11 @@ var isValid = function(s) {
                 return false;
             }
         } else {
-            // It's an opening bracket, push onto the stack
             stack.push(char);
         }
     }
     
-    // If the stack is empty, the parentheses are balanced
+    
     return stack.length === 0;
 }; 
 
