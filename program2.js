@@ -21,7 +21,7 @@ var romanToInt= function(s) {
         let currentVal = romanMap[s[i]];
         let nextVal = romanMap[s[i + 1]];
 
-        // If current value is less than the next value, it's a subtractive case
+        
         if (nextVal && currentVal < nextVal) {
             total -= currentVal;
         } else {
