@@ -8,3 +8,36 @@ var romanToInt = function(s) {
 
 
 module.exports={romanToInt}
+
+
+function romanToInt(s) {
+    if (s.length === 0) return 0; // Handle empty string
+
+    const romanMap = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    };
+    
+    let total = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        let currentVal = romanMap[s[i]];
+        let nextVal = romanMap[s[i + 1]];
+
+        // If current value is less than the next value, it's a subtractive case
+        if (nextVal && currentVal < nextVal) {
+            total -= currentVal;
+        } else {
+            total += currentVal;
+        }
+    }
+
+    return total;
+}
+
+module.exports = { romanToInt };
